@@ -1,5 +1,5 @@
 {
-  "PG&E": {
+  "pge": {
     "authorizationServerAuthorizationEndpoint": {
       "production": "https://api.pge.com/datacustodian/oauth/v2/authorize",
       "test": "https://api.pge.com/datacustodian/test/oauth/v2/authorize"
