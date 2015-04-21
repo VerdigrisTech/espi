@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "verdigris-app": {
+    "host": "localhost",
+    "database": "energyai_development",
+    "username": "andrewjo",
+    "name": "verdigris-app",
+    "connector": "postgresql"
+  }
+}

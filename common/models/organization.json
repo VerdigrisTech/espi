@@ -1,0 +1,30 @@
+{
+  "name": "organization",
+  "plural": "organizations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "postgresql": {
+      "table": "organizations"
+    },
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "created_at": {
+      "type": "date",
+      "required": true
+    },
+    "updated_at": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
