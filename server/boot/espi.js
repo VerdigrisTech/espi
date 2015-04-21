@@ -2,12 +2,18 @@
  * Implements Energy Services Provider Interface (ESPI) API callback routes.
  */
 
-var authorize = function authorize(req, res, next) {
-  
+var scopeSelection = function scopeSelection(req, res, next) {
+  var dcConfig = require('../datacustodian.json');
+
+  console.log(req);
+  res.send("We should authenticate to " + dcConfig[req.params.datacustodian].authorizationServerAuthorizationEndpoint.test);
 };
 
 module.exports = function(server) {
+  // Get an instance of Express Router
   var espiRouter = server.loopback.Router();
-  espiRouter('/auth', authorize);
+
+  espiRouter.get('/scope/:datacustodian', scopeSelection);
+
   server.use('/espi', espiRouter);
 };
