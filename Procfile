@@ -1,1 +1,1 @@
-web: node .
+web: slc run
