@@ -2,10 +2,12 @@
   "pge": {
     "authorizationServerAuthorizationEndpoint": {
       "production": "https://api.pge.com/datacustodian/oauth/v2/authorize",
+      "staging": "https://api.pge.com/datacustodian/test/oauth/v2/authorize",
       "test": "https://api.pge.com/datacustodian/test/oauth/v2/authorize"
     },
     "authorizationServerTokenEndpoint": {
       "production": "https://api.pge.com/datacustodian/oauth/v2/token",
+      "staging": "https://api.pge.com/datacustodian/test/oauth/v2/token",
       "test": "https://api.pge.com/datacustodian/test/oauth/v2/token"
     }
   }
