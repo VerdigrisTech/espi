@@ -6,8 +6,7 @@ var scopeSelection = function scopeSelection(req, res, next) {
   var dcConfig = require('../datacustodian.json');
   var env = req.app.get('env');
 
-  console.log(req);
-  res.send("We should authenticate to " + dcConfig[req.params.datacustodian].authorizationServerAuthorizationEndpoint[env]);
+  res.send("We should authenticate to " + dcConfig[req.params.datacustodian].authorizationServerAuthorizationEndpoint[env] + "\nThe scope selected was " + req.query);
 };
 
 module.exports = function(server) {
